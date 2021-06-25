@@ -1,0 +1,52 @@
+---
+  openapi: "3.0.0"
+  info: 
+    title: "Task-Api"
+    description: "\n    This document describes the REST API for Task.\n    # Version Notes"
+    version: "1.0"
+    contact: {}
+  tags: []
+  servers: []
+  components: 
+    schemas: 
+      TaskObj: 
+        type: "object"
+        properties: 
+          description: 
+            type: "string"
+          reminder: 
+            type: "string"
+          due: 
+            type: "string"
+          category: 
+            type: "string"
+        required: 
+          - "description"
+          - "reminder"
+          - "due"
+          - "category"
+  paths: 
+    /get-data: 
+      get: 
+        operationId: "AppController_getData"
+        parameters: []
+        responses: 
+          200: 
+            description: ""
+        tags: 
+          - "Task-Api"
+    /set-data: 
+      post: 
+        operationId: "AppController_setData"
+        parameters: []
+        requestBody: 
+          required: true
+          content: 
+            application/json: 
+              schema: 
+                $ref: "#/components/schemas/TaskObj"
+        responses: 
+          201: 
+            description: ""
+        tags: 
+          - "Task-Api"

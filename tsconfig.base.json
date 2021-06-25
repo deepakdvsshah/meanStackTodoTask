@@ -1,0 +1,39 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@create-task/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@create-task/openapi/task": [
+        "openapi/generated-clients/task/0.0.1/index.ts"
+      ],
+      "@create-task/task-form": [
+        "libs/task-form/src/index.ts"
+      ],
+      "@create-task/view-task": [
+        "libs/view-task/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

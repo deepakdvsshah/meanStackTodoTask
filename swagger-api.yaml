@@ -1,0 +1,29 @@
+---
+  openapi: "3.0.0"
+  info: 
+    title: "Task-Api"
+    description: "\n    This document describes the REST API for Task.\n    # Version Notes"
+    version: "1.0"
+    contact: {}
+  tags: []
+  servers: []
+  components: 
+  paths: 
+    /get-data: 
+      get: 
+        operationId: "AppController_getData"
+        parameters: []
+        responses: 
+          200: 
+            description: ""
+        tags: 
+          - "Task-Api"
+    /set-data: 
+      post: 
+        operationId: "AppController_setData"
+        parameters: []
+        responses: 
+          201: 
+            description: ""
+        tags: 
+          - "Task-Api"

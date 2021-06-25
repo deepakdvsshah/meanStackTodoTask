@@ -1,0 +1,3 @@
+{
+  "task": "openapi-generator generate  -i ./openapi/yaml/task/swagger-api.yaml -g typescript-angular -o ./openapi/generated-clients/task/0.0.1 --skip-validate-spec"
+ }

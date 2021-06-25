@@ -1,0 +1,28 @@
+.col-6 {
+  word-wrap: break-word;
+  border: black 1px solid;
+  padding: 8px;
+}
+.row,
+.col-lg-6,
+.col-sm-6 {
+  padding: 0;
+  margin: 0;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+button {
+  width: inherit;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .row {
+    padding: 10px;
+  }
+  button {
+    width: auto;
+  }
+}

@@ -1,0 +1,14 @@
+.bs-example {
+  margin: 20px;
+}
+button {
+  margin-right: 10px;
+}
+.navbar-nav {
+  padding: 0;
+}
+@media only screen and (max-width: 500px) {
+  .navbar-nav {
+    padding: 20px;
+  }
+}

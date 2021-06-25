@@ -1,0 +1,49 @@
+{
+  "npmScope": "create-task",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "create-todo": {
+      "tags": []
+    },
+    "create-todo-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "create-todo"
+      ]
+    },
+    "task-form": {
+      "tags": []
+    },
+    "view-task": {
+      "tags": []
+    }
+  }
+}
